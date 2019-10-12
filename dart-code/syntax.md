@@ -1,4 +1,4 @@
-# Dart: Sintáxis báscia
+# Dart: Sintáxis báscia
 
 ## ¿Qué es dart?
 Dart es un lenguaje de código abierto, estructurado y flexible, orientado a objetos, basado en clases, con herencia simple y sporte de interfaces, clases abstractas y tipado opcional de datos.
@@ -139,4 +139,75 @@ Para añadir nuevos elementos a la lista después de declararla o inicializarla,
 Ejemplo
 ```dart
 nombres.add('Nuevo nombre');
+```
+### Mapas
+Los mapas son un tipo de estructura de datos que nos permite almacenar la información en pares **llave** - > **valor**.
+
+Ejemplo
+```dart
+var mapa = {}; //Sin valor inicial
+
+var mapa = {  //Con valor inicial
+    'valor1': 'valor 1',
+    'llave2': 'valor 2',
+    'valorEntero': 30,
+};
+
+```
+
+Es posible añadir nuevos elementos a un mapa de la siguiente manera:
+
+```dart
+mapa['nuevaLlave'] = 'Valor de la nueva llave';
+```
+
+## Estructuras de control
+Las estructuras de control son bloques de código que analizan variables y determinan como fluirán nuestros programas.
+
+### Condicionales
+
+#### If-else
+```dart
+if(condicion){
+    //Código a ejecutar si la condición se cumple
+}else{
+    //Código a ejecutar si la condición no se cumple
+}
+```
+
+#### Switch-case
+```dart
+switch(variable){
+    case 1: //Código caso 1
+    break;
+    case 2: //Código caso 2
+    break;
+    case n: 
+    break;
+
+    default: //Código que se ejecuta en si la variable no cumple ningún caso.
+  }
+```
+
+
+
+### Ciclos
+
+#### For
+```dart
+for(iterador = inicio; iterador <= limite; iterador ++){
+    //Código que se repetirá n cantidad de veces;
+} 
+```
+
+#### While y do While
+```dart
+while(condicion){
+    //codigo que se ejecuta mientras se cumpla la condición
+}
+
+
+do{
+    //Código que se ejecuta antes de evaluar la condición. Siempre se ejecuta al menos 1 vez.
+}while(condición)
 ```
