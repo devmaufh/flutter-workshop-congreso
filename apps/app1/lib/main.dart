@@ -1,3 +1,4 @@
+import 'package:app1/pages/home_page.dart';
 import 'package:app1/pages/register_page.dart';
 import 'package:flutter/material.dart';
 void main() => runApp(MyApp());
@@ -10,7 +11,11 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.purple
       ),
-      home: RegisterPage(),
+      initialRoute: 'home',
+      routes: {
+        'home' : (BuildContext context) =>HomePage(),
+        'registro': (BuildContext context) => RegisterPage(),
+      },
     );
   }
 }
